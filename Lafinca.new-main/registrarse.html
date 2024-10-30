@@ -1,0 +1,115 @@
+<html><!-- Modal Propiedad-->
+<!-- Modal Registro -->
+<div class="modal fade" id="registroModal" tabindex="-1" aria-labelledby="registroModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="registroModalLabel">Registro</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Aquí puedes colocar el formulario de registro -->
+                <form enctype="multipart/form-data">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <!-- Campos del formulario -->
+                            <div class="mb-3">
+                                <label for="apellidoYNombre" class="form-label">Apellido y
+                                    nombre</label>
+                                <input type="text" class="form-control" id="apellidoYNombre"
+                                    placeholder="Ingrese su nombre completo">
+                            </div>
+                            <div class="mb-3">
+                                <label for="dni" class="form-label">DNI</label>
+                                <input type="text" class="form-control" id="dni"
+                                    placeholder="Ingrese su número de documento">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label for="fechaDeNacimiento" class="form-label">Fecha de
+                                    nacimiento</label>
+                                <input type="date" class="form-control" id="fechaDeNacimiento"
+                                    placeholder="Ingrese su fecha de nacimiento">
+                            </div>
+                            <div class="mb-3">
+                                <label for="sexo" class="form-label">Sexo</label>
+                                <select class="form-select" id="sexo">
+                                    <option value="hombre">Hombre</option>
+                                    <option value="mujer">Mujer</option>
+                                    <option value="no_binario">No binario</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label for="direccion" class="form-label">Domicilio</label>
+                                <input type="text" class="form-control" id="domicilio"
+                                    placeholder="Ingrese su direción">
+                            </div>
+                            <div class="mb-3">
+                                <label for="codigoPostal" class="form-label">Codigo postal</label>
+                                <input type="text" class="form-control" id="codigoPostal"
+                                    placeholder="Ingrese su codigo postal">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label for="localidad" class="form-label">Localidad</label>
+                                <input type="text" class="form-control" id="localidad"
+                                    placeholder="Ingrese su localidad">
+                            </div>
+                            <div class="mb-3">
+                                <label for="provincia" class="form-label">Provincia</label>
+                                <input type="text" class="form-control" id="provincia"
+                                    placeholder="Ingrese su provincia">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label for="pais" class="form-label">País</label>
+                                <input type="text" class="form-control" id="pais" placeholder="Ingrese su país">
+                            </div>
+                            <div class="mb-3">
+                                <label for="telefono" class="form-label">Numero de telefono</label>
+                                <input type="tel" class="form-control" id="telefono"
+                                    placeholder="Ingrese su número de contacto">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label for="correo" class="form-label">Correo Electrónico</label>
+                                <input type="email" class="form-control" id="correo"
+                                    placeholder="Ingrese su correo electronico">
+                            </div>
+                            <div class="mb-3">
+                                <label for="password" class="form-label">Contraseña</label>
+                                <input type="password" class="form-control" id="password"
+                                    placeholder="Ingrese su nueva contraseña">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="confirmarPassword" class="form-label">Confirmar
+                                    contraseña</label>
+                                <input type="password" class="form-control" id="confirmarPassword"
+                                    placeholder="Confirme su contraña">
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="fotoRostro" class="form-label">Cargar foto de su
+                                rostro</label>
+                            <input type="file" class="form-control" id="fotoRostro" accept="image/*">
+                        </div>
+
+                    </div>
+                    <!-- Otros campos del formulario -->
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="submit" class="btn btn-primary">Registrarse</button>
+            </div>
+        </div>
+    </div>
+</div>
